@@ -1,0 +1,2 @@
+to delete directory and its contents forcefully - 
+rm -rf Root #root is the name of the directory
