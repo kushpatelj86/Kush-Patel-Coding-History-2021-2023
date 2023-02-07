@@ -1,0 +1,67 @@
+0
+0 import kareltherobot.*;
+0
+0 public class MazeRobot extends SmartRobot implements Directions
+0 {
+0
+4 public MazeRobot(int st, int av, Direction dir, int numBeepers)
+4 {
+8 super(st,av,dir,numBeepers);
+4 }
+0
+4 public void move()
+4 {
+8 if(rightIsClear() == true)
+8 {
+12 turnRight();
+12 super.move();
+8 }
+8 else
+8 {
+12 if(frontIsClear() == true)
+12 {
+16 super.move();
+12 }
+12 else
+12 {
+16 turnLeft();
+12 }
+8 }
+4 }
+0
+4 public boolean rightIsClear()
+4 {
+8 boolean myClear = false;
+0
+8 turnRight();
+8 if ( frontIsClear() == true )
+8 {
+12 turnLeft();
+12 myClear = true;
+8 }
+8 else
+8 {
+12 turnLeft();
+8 }
+0
+8 return myClear;
+4 }
+0
+4 public boolean leftIsClear()
+4 {
+8 boolean myClear = false;
+0
+8 turnLeft();
+8 if ( frontIsClear() == true )
+8 {
+12 turnRight();
+12 myClear = true;
+8 }
+8 else
+8 {
+12 turnRight();
+8 }
+0
+8 return myClear;
+4 }
+0 }
