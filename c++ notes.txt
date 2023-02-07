@@ -1,2 +1,14 @@
-to delete directory and its contents forcefully - 
+ to delete directory and its contents forcefully - 
 rm -rf Root #root is the name of the directory
+
+
+
+to build
+
+kushpatelj86@DESKTOP-T9949G2:/mnt/c/Users/Kush/Downloads/C++ Development Root/C++ Development Root$ ./Build.sh
+
+
+cd  /mnt/c/Users/Kush/Downloads/C++\ Development\ Root/
+
+
+cat > main.cpp << EOF
