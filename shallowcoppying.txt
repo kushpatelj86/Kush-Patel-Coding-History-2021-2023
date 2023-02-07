@@ -1,0 +1,1 @@
+shallow copy:One level deep, only references and nested child objects
