@@ -1,0 +1,242 @@
+$ git clone https://github.com/CSUF-CPSC121L-2022F/treasure-hunt-kushpatelj86.git
+Cloning into 'treasure-hunt-kushpatelj86'...
+Username for 'https://github.com': kushpatelj86
+Password for 'https://kushpatelj86@github.com': 
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 21 (delta 0), reused 17 (delta 0), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+$ cd
+$ cd garden
+bash: cd: garden: No such file or directory
+$ ls
+treasure-hunt-kushpatelj86/
+$ cat README.md
+cat: README.md: No such file or directory
+$ ls 
+treasure-hunt-kushpatelj86/
+$ cd treasure-hunt-kushpatelj86/
+$ ls 
+LICENSE  README.md  garden/  gitcloneguide.png  house/
+$ cd garden
+$ ls
+README.md
+$ cat README.md
+# Garden
+
+It's a beautiful garden, but doesn't seem to have any evidence that treasure is here (``ls`` only showed this file, ``README.md``) Maybe we should try the house!
+
+Type ``pwd`` to print the path to where you are now. You will see we are in command-line-treasure-hunt/garden.
+
+Try ``cd ..`` to move up a directory, and then try to ``cd house`` to move into the house directory instead.
+
+```
+cd ..
+cd house
+ls
+cat README.md
+```
+$ pwd
+/root/sandbox/treasure-hunt-kushpatelj86/garden
+$ cd
+$ cd house
+bash: cd: house: No such file or directory
+$ ls
+treasure-hunt-kushpatelj86/
+$ cd treasure-hunt-kushpatelj86/
+$ ls
+LICENSE  README.md  garden/  gitcloneguide.png  house/
+$ cd g
+garden/            gitcloneguide.png  
+$ cd garden/
+$ ls
+README.md
+$ cat README.md
+# Garden
+
+It's a beautiful garden, but doesn't seem to have any evidence that treasure is here (``ls`` only showed this file, ``README.md``) Maybe we should try the house!
+
+Type ``pwd`` to print the path to where you are now. You will see we are in command-line-treasure-hunt/garden.
+
+Try ``cd ..`` to move up a directory, and then try to ``cd house`` to move into the house directory instead.
+
+```
+cd ..
+cd house
+ls
+cat README.md
+```
+$ 
+$ cat README.md
+# Garden
+
+It's a beautiful garden, but doesn't seem to have any evidence that treasure is here (``ls`` only showed this file, ``README.md``) Maybe we should try the house!
+
+Type ``pwd`` to print the path to where you are now. You will see we are in command-line-treasure-hunt/garden.
+
+Try ``cd ..`` to move up a directory, and then try to ``cd house`` to move into the house directory instead.
+
+```
+cd ..
+cd house
+ls
+cat README.md
+```
+$ ls
+README.md
+$ cat README.md 
+# Garden
+
+It's a beautiful garden, but doesn't seem to have any evidence that treasure is here (``ls`` only showed this file, ``README.md``) Maybe we should try the house!
+
+Type ``pwd`` to print the path to where you are now. You will see we are in command-line-treasure-hunt/garden.
+
+Try ``cd ..`` to move up a directory, and then try to ``cd house`` to move into the house directory instead.
+
+```
+cd ..
+cd house
+ls
+cat README.md
+```
+$ cd
+$ cd 
+$ cd house
+bash: cd: house: No such file or directory
+$ ls
+treasure-hunt-kushpatelj86/
+$ cat README.md
+cat: README.md: No such file or directory
+$ cd
+$ cd garden
+bash: cd: garden: No such file or directory
+$ cd..
+cd..: command not found
+$ cd 
+$ cd ..
+$ ls
+sandbox/
+$ cd sandbox/
+$ ls
+treasure-hunt-kushpatelj86/
+$ cd treasure-hunt-kushpatelj86/
+$ ls
+LICENSE  README.md  garden/  gitcloneguide.png  house/
+$ cd g
+garden/            gitcloneguide.png  
+$ cd garden/
+$ ls
+README.md
+$ cat README.md 
+# Garden
+
+It's a beautiful garden, but doesn't seem to have any evidence that treasure is here (``ls`` only showed this file, ``README.md``) Maybe we should try the house!
+
+Type ``pwd`` to print the path to where you are now. You will see we are in command-line-treasure-hunt/garden.
+
+Try ``cd ..`` to move up a directory, and then try to ``cd house`` to move into the house directory instead.
+
+```
+cd ..
+cd house
+ls
+cat README.md
+```
+$ ls
+README.md
+$ pwd
+/root/sandbox/treasure-hunt-kushpatelj86/garden
+$ cd ..
+$ ls
+LICENSE  README.md  garden/  gitcloneguide.png  house/
+$ cd house/
+$ ls
+README.md  front_room/  kitchen/  upstairs/
+$ cat README.md 
+# House
+
+Welcome to the house! There's a distinct feeling that the treasure is closer. Muddy footsteps head towards the front room. What's in there? Go in and check it out!
+
+```
+cd front_room
+ls
+cat README.md
+```
+$ cd front_room/
+$ ls
+README.md
+$ cat README.md 
+# Front room
+
+A cozy front room, but no treasure. The tracks head into the kitchen. Let's go up to the house/ directory and into the kitchen/ instead!
+
+Don't forget you can type ``pwd`` to figure out where you are right now!
+
+Note that when you type ``pwd`` your full location is printed, and it starts with a ``\``. That slash indicates an absolute path, whereas a path that does not start with a ``\`` is a relative path to the current working directory.
+
+So from the house directory, we could type the relative path to the kitchen directory, and it would work:
+
+```
+cd kitchen
+```
+
+But we cannot do this, because there is no kitchen directory at the root of your filesystem:
+
+```
+cd /kitchen
+```
+
+Ready to go back and look in the kitchen?
+
+```
+cd ..
+cd kitchen
+ls
+cat README.md
+```
+$ cd ..
+$ ls
+README.md  front_room/  kitchen/  upstairs/
+$ cd kitchen/
+$ ls
+README.md
+$ cat README.md 
+# Kitchen
+
+It's the kitchen! Smells like pie, yum. But there's no treasure. Let's go upstairs!
+
+We can jump straight to another directory by chaining commands, so instead of ``cd ..`` and then ``cd upstairs``, we can simply type ``cd ../upstairs``. Try it!
+
+```
+cd ../upstairs
+ls
+cat README.md
+```
+$ cd ..
+$ ls
+README.md  front_room/  kitchen/  upstairs/
+$ cd upstairs/
+$ ls
+README.md  bedroom/
+$ cat README.md 
+# Upstairs
+
+The door to the bedroom is ajar and a golden light peaks through... what is it?
+
+```
+cd bedroom
+ls
+```
+$ ls
+README.md  bedroom/
+$ cd bedroom/
+$ ls
+TREASURE.md  bed/  closet/
+$ cat TREASURE.md 
+# Treasure
+
+Congratulations! You found the treasure! It's here in the bedroom directory.
+
+Type ``pwd`` to figure out where we are now.
+$ 
