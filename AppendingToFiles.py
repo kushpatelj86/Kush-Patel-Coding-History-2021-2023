@@ -1,0 +1,10 @@
+number_file = open("1.txt","a") #we can keep the current stuff in the same file without changing the whole file and keeping the original contents of the file by using 'a and adding
+number_file.write("\n 4")
+number_file.write("\n 2")
+number_file.write("\n 5")
+number_file.write("\n 6")
+number_file.write("\n 7")
+number_file.write("\n 86")
+number_file.write("\n 27")
+number_file.write("\n 244")
+number_file.close()
