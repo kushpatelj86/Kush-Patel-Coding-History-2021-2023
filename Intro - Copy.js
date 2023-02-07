@@ -1,0 +1,2 @@
+console.log("Subscribe Now"); //equivalent to print() in python System.out.println() in java and cout << "" << end; in c++
+console.log(" Now"); //equivalent to print() in python System.out.println() in java and cout << "" << end; in c++
