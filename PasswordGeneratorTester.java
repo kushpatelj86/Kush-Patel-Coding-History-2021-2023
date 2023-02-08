@@ -41,13 +41,5 @@ public class PasswordGeneratorTester
 
     }
 }
-///communty college password aJIQ@^2+04x8
 
-
-//credit card F7@DxYnNYqb9cVX
-//O5X3U486
-
-
-//ubuntu
-//X4==3<6ch2V1
 
